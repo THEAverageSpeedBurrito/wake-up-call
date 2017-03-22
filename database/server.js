@@ -18,3 +18,10 @@ app.listen(port, () => {
 });
 
 //Routes
+const users = require('./routes/users');
+const journals = require('./routes/journals');
+const tweets = require('./routes/tweets');
+
+app.use('/users', users);
+app.use('/journals', journals);
+app.use('/tweets', tweets);
