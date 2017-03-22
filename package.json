@@ -20,7 +20,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "heroku-postbuild": "knex migrate:latest && nodemon",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "knex migrate:latest"
+  },
+  "engines": {
+    "node": "6.7.0",
+    "npm": "3.10.3",
+    "nodemon": "1.11.0"
   }
 }
