@@ -2,6 +2,7 @@
   "name": "wake-up-call",
   "version": "0.1.0",
   "private": true,
+  "main": "./database/server.js",
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
@@ -19,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "heroku-postbuild": "knex migrate:latest && nodemon",
     "eject": "react-scripts eject"
   }
 }
